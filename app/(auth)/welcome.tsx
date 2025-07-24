@@ -39,10 +39,6 @@ const Onboarding = () => {
       >
         {onboardingData.map((item) => (
           <View key={item.id} className="flex items-center justify-center">
-            <Text className="text-black text-2xl font-JakartaBold">
-              {item.title}
-            </Text>
-            {/* <Text className="text-black text-2xl font-JakartaBold">{item.description}</Text> */}
             <Image
               source={item.image}
               className="w-full h-[300px]"
