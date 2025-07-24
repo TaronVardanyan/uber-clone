@@ -39,10 +39,6 @@ const Onboarding = () => {
       >
         {onboardingData.map((item) => (
           <View key={item.id} className="flex items-center justify-center">
-            <Text className="text-black text-2xl font-JakartaBold">
-              {item.title}
-            </Text>
-            {/* <Text className="text-black text-2xl font-JakartaBold">{item.description}</Text> */}
             <Image
               source={item.image}
               className="w-full h-[300px]"
@@ -66,7 +62,7 @@ const Onboarding = () => {
             ? () => router.replace("/(auth)/sign-up")
             : () => swiperRef.current?.scrollBy(1)
         }
-        className="w-10/12 mt-10"
+        className="w-11/12 mt-10"
       />
     </SafeAreaView>
   );
